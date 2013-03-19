@@ -1,0 +1,142 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8">
+
+<title>Messages</title>
+<meta name="viewport" content="target-densityDpi=device-dpi" />
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- Cordova -->
+<script type="text/javascript" src="../../cordova-1.8.1.js"></script>
+
+<!-- jQuery-->
+<script type="text/javascript" src="../../js/libs/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="../../js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+
+<!-- WebSocket -->
+<script type="text/javascript" src="../../js/libs/websocket.js"></script>
+
+<script type="text/javascript" src="../../js/libs/charCount.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+		//custom usage
+		$("#message").charCount({
+			allowed: 50,		
+			warning: 20,
+			counterText: ''	
+		});
+	});
+</script>
+
+<!-- Application models-->
+<script src="../../js/models/user.js"></script>
+<script src="../../js/models/localization.js"></script>
+<script src="../../js/models/venue.js"></script>
+<script src="../../js/models/team.js"></script>
+
+<!-- Application messaging protocol-->
+<script src="../../js/protocol.js"></script>
+
+<!-- Application logic-->
+<script src="../../js/app.js"></script>
+
+</head>
+
+<body>
+
+	<div data-role="page" id="messages">
+		<div id="container_messages">
+
+					<a href="../../index.html"><div id="go_back">Back</div></a>
+
+			<h1>Message <br>board</h1>
+
+			<p id="message-intro">Here you can chat with gang members. Feel free to plan game strategies or just post your current whereabouts, it's totally up to you! </p>
+
+			<div id="write">
+
+ 				<form id="form" method="post" action="">  
+
+        			<div>
+        				<textarea id="message" name="message" placeholder="Drop your line here..."></textarea>
+        			<!-- 	<a href="" class="submit-button">Submit</a>  -->
+        			</div> 
+
+        			 
+
+    			</form>
+
+  			</div>
+  			<!--! end of #write -->
+
+           	<table id="message-board">
+<!-- 			    <thead>
+			    	<tr>
+			        	<th scope="col">Time</th>
+			            <th scope="col">Sender</th>
+			            <th scope="col">Message</th>
+			        </tr>
+			    </thead> -->
+			    <tbody>
+			    	<tr>
+			    		<td>13:01</td>
+			            <td>Bobby</td>
+			            <td>Aargh, we lost it again :( <span class="new">new</span></td>
+	
+			        </tr>
+			        <tr>
+			        	<td>12:34</td>
+			            <td>Missy</td>
+			            <td>yeah..it's great to have it back to Kannuttajat</td>
+
+			        </tr>
+			        <tr>
+			       		<td>12:21</td>
+			            <td>Molly</td>
+			            <td>Niiice!!!</td>
+
+			        </tr>
+			        <tr>
+		        		<td>12:20</td>
+			            <td>Bobby</td>
+			            <td>Great news folks, I just sprayed Toripolliisi!</td>
+			        </tr>
+			        <tr>
+			    		<td>11:59</td>
+			            <td>Molly</td>
+			            <td>and Toripolliisi</td>
+	
+			        </tr>
+			        <tr>
+			        	<td>12:34</td>
+			            <td>Missy</td>
+			            <td>We really should spray Rotuaari soon</td>
+
+			        </tr>
+			        <tr>
+			       		<td>10:14</td>
+			            <td>Molly</td>
+			            <td>See ya Bobby!</td>
+
+			        </tr>
+			        <tr>
+		        		<td>10:12</td>
+			            <td>Bobby</td>
+			            <td>Leaving now to the town...bye</td>
+			        </tr>
+			    </tbody>
+
+
+
+			</table>
+
+			
+     
+        </div><!--! end of #container -->
+	</div> 
+
+</body>
+</html>

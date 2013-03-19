@@ -1,0 +1,337 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8">
+
+<title>Leaderboard - Players</title>
+<meta name="viewport" content="target-densityDpi=device-dpi" />
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- jQuery-->
+<script type="text/javascript" src="../../js/libs/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="../../js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+
+<!-- Application models-->
+<script src="../../js/models/user.js"></script>
+<script src="../../js/models/localization.js"></script>
+<script src="../../js/models/venue.js"></script>
+<script src="../../js/models/team.js"></script>
+
+<!-- Application messaging protocol-->
+<script src="../../js/protocol.js"></script>
+
+<!-- TableSorter-->
+<script src="../../js/libs/jquery.tablesorter.js"></script>
+
+<script>
+$(document).ready(function() { 
+    // call the tablesorter plugin 
+    $("#sorter").tablesorter({ 
+        // sort on the first column and third column, order asc 
+        sortList: [[0,0]] ,
+         headers: { 1: { sorter: false} }
+    }); 
+});
+</script>
+
+<!-- Application logic-->
+<script src="../../js/app.js"></script>
+
+</head>
+
+<body>
+
+	<div data-role="page" id="ranking-players">
+		<div class="container_ranking_players">
+
+			<div id="main" role="main">
+            
+            	<a href="leaderboard-selection.html"><div id="go_back">Back</div></a>
+                                
+                                 
+                    <h2>Players</h2> 
+                    <h1>Leaderboard</h1> 
+                            
+                    <div id="demo">
+
+                    <table cellpadding="0" cellspacing="0" border="0" class="display" id="sorter" class="tablesorter">
+                        <thead>
+                            <tr>
+                                <th class="header">#</th>
+                                <th class="header">Name</th>
+                                <th class="header">Sprayed</th>
+                                <th class="header">Erased</th>
+                                <th class="header">Total</th>
+                            </tr>
+                        </thead>
+                        <!-- Table Header -->
+
+                        <!-- Table Body -->
+                        <tbody>
+
+                            <tr>
+                                <td class="first">1</td>
+                                <td>Missy</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td>160</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>2</td>
+                                <td>Bobby</td>
+                                <td>95</td>
+                                <td>55</td>
+                                <td>150</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>3</td>
+                                <td>Paddy</td>
+                                <td>100</td>
+                                <td>46</td>
+                                <td>146</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>4</td>
+                                <td>Timmy</td>
+                                <td>90</td>
+                                <td>52</td>
+                                <td>142</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>5</td>
+                                <td>Jody</td>
+                                <td>100</td>
+                                <td>39</td>
+                                <td>139</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>6</td>
+                                <td>Marty</td>
+                                <td>80</td>
+                                <td>57</td>
+                                <td>137</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>7</td>
+                                <td>Holly</td>
+                                <td>80</td>
+                                <td>47</td>
+                                <td>127</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td>8</td>
+                                <td>Polly</td>
+                                <td>90</td>
+                                <td>34</td>
+                                <td>124</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>9</td>
+                                <td>Rory</td>
+                                <td>100</td>
+                                <td>22</td>
+                                <td>122</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>10</td>
+                                <td>Larry</td>
+                                <td>76</td>
+                                <td>31</td>
+                                <td>116</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>11</td>
+                                <td>Molly</td>
+                                <td>80</td>
+                                <td>32</td>
+                                <td>112</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td>12</td>
+                                <td>Jay</td>
+                                <td>70</td>
+                                <td>41</td>
+                                <td>111</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>13</td>
+                                <td>Gary</td>
+                                <td>100</td>
+                                <td>8</td>
+                                <td>108</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>14</td>
+                                <td>Billy</td>
+                                <td>74</td>
+                                <td>32</td>
+                                <td>106</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>15</td>
+                                <td>Dolly</td>
+                                <td>80</td>
+                                <td>22</td>
+                                <td>102</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td>16</td>
+                                <td>Ricky</td>
+                                <td>90</td>
+                                <td>9</td>
+                                <td>99</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>17</td>
+                                <td>Vicky</td>
+                                <td>77</td>
+                                <td>20</td>
+                                <td>97</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>18</td>
+                                <td>Tory</td>
+                                <td>80</td>
+                                <td>15</td>
+                                <td>95</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>19</td>
+                                <td>Kathy</td>
+                                <td>30</td>
+                                <td>60</td>
+                                <td>90</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>20</td>
+                                <td>Roxy</td>
+                                <td>60</td>
+                                <td>29</td>
+                                <td>89</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>21</td>
+                                <td>Lily</td>
+                                <td>74</td>
+                                <td>11</td>
+                                <td>85</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td>22</td>
+                                <td>Kitty</td>
+                                <td>68</td>
+                                <td>15</td>
+                                <td>83</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>23</td>
+                                <td>Fay</td>
+                                <td>70</td>
+                                <td>10</td>
+                                <td>80</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>24</td>
+                                <td>Harry</td>
+                                <td>60</td>
+                                <td>16</td>
+                                <td>76</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>25</td>
+                                <td>Manny</td>
+                                <td>60</td>
+                                <td>15</td>
+                                <td>75</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td>26</td>
+                                <td>Danny</td>
+                                <td>50</td>
+                                <td>24</td>
+                                <td>74</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>27</td>
+                                <td>Randy</td>
+                                <td>60</td>
+                                <td>11</td>
+                                <td>71</td>
+                            </tr><!-- Table Row -->
+
+                            <tr class="even">
+                                <td>28</td>
+                                <td>Wendy</td>
+                                <td>40</td>
+                                <td>27</td>
+                                <td>67</td>
+                            </tr><!-- Darker Table Row -->
+
+                            <tr>
+                                <td>29</td>
+                                <td>Lizzy</td>
+                                <td>57</td>
+                                <td>5</td>
+                                <td>62</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td>30</td>
+                                <td>Cory</td>
+                                <td>60</td>
+                                <td>11</td>
+                                <td>61</td>
+                            </tr><!-- Darker Table Row -->
+
+
+
+                        </tbody>
+                        <!-- Table Body -->
+
+
+                    </table>
+
+                                <a href="leaderboard-gang.html"><div id="go_back2">Gangs</div></a>    
+            </div>
+                       
+
+                     
+      
+			</div>
+        	<!--! end of #main -->
+		
+		</div>
+    	<!--! end of #container --> 
+     
+	</div>
+    
+</body>
+</html>

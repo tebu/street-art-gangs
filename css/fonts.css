@@ -1,0 +1,81 @@
+﻿@font-face {
+    font-family: 'RadiolandRegular';
+    src: url('../js/fonts/radioland/RADIOLANDSLIM-webfont.eot');
+    src: url('../js/fonts/radioland/RADIOLAND-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/radioland/RADIOLAND-webfont.woff') format('woff'),
+         url('../js/fonts/radioland/RADIOLAND-webfont.ttf') format('truetype'),
+         url('../js/fonts/radioland/RADIOLAND-webfont.svg#RadiolandRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'RadiolandSlimRegular';
+    src: url('../js/fonts/radioland/RADIOLANDSLIM-webfont.eot');
+    src: url('../js/fonts/radioland/RADIOLANDSLIM-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/radioland/RADIOLANDSLIM-webfont.woff') format('woff'),
+         url('../js/fonts/radioland/RADIOLANDSLIM-webfont.ttf') format('truetype'),
+         url('../js/fonts/radioland/RADIOLANDSLIM-webfont.svg#RadiolandSlimRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'misterearl_btregular';
+    src: url('../js/fonts/mister-earl/mister_earl_bt-webfont.eot');
+    src: url('../js/fonts/mister-earl/mister_earl_bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/mister-earl/mister_earl_bt-webfont.woff') format('woff'),
+         url('../js/fonts/mister-earl/mister_earl_bt-webfont.ttf') format('truetype'),
+         url('../js/fonts/mister-earl/mister_earl_bt-webfont.svg#misterearl_btregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amatic_scbold';
+    src: url('../js/fonts/amatic/amaticsc-bold-webfont.eot');
+    src: url('../js/fonts/amatic/amaticsc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/amatic/amaticsc-bold-webfont.woff') format('woff'),
+         url('../js/fonts/amatic/amaticsc-bold-webfont.ttf') format('truetype'),
+         url('../js/fonts/amatic/amaticsc-bold-webfont.svg#amatic_scbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('../js/fonts/amatic/amaticsc-regular-webfont.eot');
+    src: url('../js/fonts/amatic/amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/amatic/amaticsc-regular-webfont.woff') format('woff'),
+         url('../js/fonts/amatic/maticsc-regular-webfont.ttf') format('truetype'),
+         url('../js/fonts/amatic/amaticsc-regular-webfont.svg#amatic_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('../js/fonts/gooddog/gooddog-webfont.eot');
+    src: url('../js/fonts/gooddog/gooddog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/gooddog/gooddog-webfont.woff') format('woff'),
+         url('../js/fonts/gooddog/gooddog-webfont.ttf') format('truetype'),
+         url('../js/fonts/gooddog/gooddog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rubberstampregular';
+    src: url('../js/fonts/ranking/rubberst-webfont.eot');
+    src: url('../js/fonts/ranking/rubberst-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/ranking/rubberst-webfont.woff') format('woff'),
+         url('../js/fonts/ranking/rubberst-webfont.ttf') format('truetype'),
+         url('../js/fonts/ranking/rubberst-webfont.svg#rubberstampregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'remington_noiselessregular';
+    src: url('../js/fonts/ranking/remington-noiseless-webfont.eot');
+    src: url('../js/fonts/ranking/remington-noiseless-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../js/fonts/ranking/remington-noiseless-webfont.woff') format('woff'),
+         url('../js/fonts/ranking/remington-noiseless-webfont.ttf') format('truetype'),
+         url('../js/fonts/ranking/remington-noiseless-webfont.svg#remington_noiselessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

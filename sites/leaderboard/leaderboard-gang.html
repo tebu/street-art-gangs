@@ -1,0 +1,93 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8">
+
+<title>Leaderboard - Gangs</title>
+<meta name="viewport" content="target-densityDpi=device-dpi" />
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- jQuery-->
+<script type="text/javascript" src="../../js/libs/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="../../js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+
+<!-- Application models-->
+<script src="../../js/models/user.js"></script>
+<script src="../../js/models/localization.js"></script>
+<script src="../../js/models/venue.js"></script>
+<script src="../../js/models/team.js"></script>
+
+<!-- Application messaging protocol-->
+<script src="../../js/protocol.js"></script>
+
+<!-- Application logic-->
+<script src="../../js/app.js"></script>
+
+</head>
+
+<body>
+
+	<div data-role="page" id="ranking-gang">
+		<div class="container_ranking_gang">
+
+			<div id="main" role="main">
+            
+                <a href="leaderboard-selection.html"><div id="go_back">Back</div></a>
+                    
+                <h2>Gangs</h2>                                          
+                <h1>Leaderboard</h1> 
+
+
+                        
+                <table cellspacing='0' id="gang-table">
+
+                    <thead>
+                        <tr>
+                            <th class="header">#</th>
+                            <th class="header">Name</th>
+                            <th class="header">Sprayed</th>
+                            <th class="header">Erased</th>
+                            <th class="header">Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kannuttajat</td>
+                            <td>320</td>
+                            <td>160</td>
+                            <td>480</td>
+                        </tr>
+
+                        <tr class="even">
+                            <td>2</td>
+                            <td>Taistelutoverit</td>
+                            <td>290</td>
+                            <td>142</td>
+                            <td>432</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Kadunvaltaajat</td>
+                            <td>280</td>
+                            <td>90</td>
+                            <td>370</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                
+            <a href="leaderboard-players.html"><div id="go_back2">Players</div></a>   			        
+			</div>
+        	<!--! end of #main -->
+		
+		</div>
+    	<!--! end of #container --> 
+	</div>
+
+</body>
+</html>
